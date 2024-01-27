@@ -1,6 +1,7 @@
 function yes() {
     document.getElementById('yes').style.display = 'none';
     document.getElementById('ask').textContent = 'Yippieee! ILY <3';
+    document.getElementById('no').style.display = 'none';
 }
 
 
