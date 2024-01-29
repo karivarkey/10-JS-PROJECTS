@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <span id="result">YOUR MOVE</span>
+      </div>
+      <div class="box">
+        <img src="./src/stone.png" alt="" onclick="play('stone')" />
+        <img src="./src/paper.png" alt="" onclick="play('paper')" />
+        <img src="./src/scissor.png" alt="" onclick="play('scissors')" />
+      </div>
+      <div class="computer">
+        <div class="text">AI CHOSE :</div>
+        <img id="ai" src="./src/scissor.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
