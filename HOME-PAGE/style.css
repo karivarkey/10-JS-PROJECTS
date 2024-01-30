@@ -19,68 +19,61 @@ body {
     box-sizing: border-box;
 }
 
-.card-flex {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 0.5fr));
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Styling for the card container */
-
-.card {
-    position: relative;
-    /* Added to position pseudo-element */
+.card-flex{
+    padding-top: 50px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap:30px;
+
+
+    
+}
+
+img{
+    border-radius: 20px;
+    height: 25vh;
+    width: 30vh;
+    transition: all 0.2s ease-in-out;
+}
+
+.element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: rgba(255, 255, 255, 0.3) 2px solid;
+    padding: 1rem;
+}
+
+img:hover{
+    border-radius: 20px;
+    height: 30vh;
+    width: 35vh;
+}
+
+
+
+
+
+
+
+.card-title{
+    font-size: 2vw;
     font-family: 'Roboto';
-    width: 300px;
-    border: 1px solid #ccc;
-    border-bottom: 3px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-    box-sizing: border-box;
+    color: white;
+    width: 25vw;
+    padding-top: 1vw;
+
 }
 
-.card::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 3px solid transparent;
-    border-bottom: 10px solid transparent;
-    top: 0;
-    left: 0;
-    transition: border 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
-    box-sizing: border-box;
-}
-
-.card:hover::after {
-    border-color: #0000;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ccc;
-}
-
-.card-content {
-    padding: 16px;
-}
-
-.card-title {
-    color: #fafafa;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.card-text {
-    color: #eff1f5;
-    font-size: 14px;
+.card-text{
+    padding-top: 12px;
+    font-family: 'Roboto';
+    color:white;
+    font-size: 1vw;
+    width: 25vw;
+    
 }
