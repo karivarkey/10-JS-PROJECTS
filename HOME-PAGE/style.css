@@ -25,33 +25,35 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap:30px;
+    gap:5vw;
 
-
-    
 }
 
 img{
-    border-radius: 20px;
-    height: 25vh;
-    width: 30vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 5vw;
+    height: 25vw;
+    width: 25vw;
     transition: all 0.2s ease-in-out;
 }
 
 .element{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: stretch;
     flex-direction: column;
     border-radius: 1rem;
     border: rgba(255, 255, 255, 0.3) 2px solid;
     padding: 1rem;
+    width: 25vw;
+
 }
 
 img:hover{
     border-radius: 20px;
-    height: 30vh;
-    width: 35vh;
+    height: 26vw;
+    width: 26vw;
 }
 
 
@@ -66,14 +68,15 @@ img:hover{
     color: white;
     width: 25vw;
     padding-top: 1vw;
+    padding-left: 1rem;
+
 
 }
 
 .card-text{
     padding-top: 12px;
+    padding-left: 12px;
     font-family: 'Roboto';
     color:white;
-    font-size: 1vw;
-    width: 25vw;
-    
+    font-size: 12px; 
 }
